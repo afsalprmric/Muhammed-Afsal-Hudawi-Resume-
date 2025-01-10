@@ -1,8 +1,3 @@
-Here’s a README file for your resume repository. It highlights the purpose of the repository and your resume's key features:
-
-
----
-
 💼 My Resume Repository
 
 This repository contains my professional resume designed to showcase my skills, experience, and accomplishments. It highlights my journey from an educator to an AI enthusiast, and my proficiency in modern technologies.
