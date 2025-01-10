@@ -1,56 +1,159 @@
+html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Muhammed Afsal</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Muhammed Afsal - Educator & AI Specialist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        header .cta-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background-color: white;
+            color: #4CAF50;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            background-color: white;
+            border-radius: 10px;
+            max-width: 900px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 1rem;
+        }
+    </style>
 </head>
-<body>
+
+<body> <!-- Header -->
     <header>
         <h1>Muhammed Afsal</h1>
-        <p>Web Developer</p>
-    </header>
+        <p>Educator | AI Specialist | Curriculum Developer | Instructional Designer</p> <a href="#contact"
+            class="cta-btn">Contact Me</a>
+    </header> <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Passionate web developer with experience in creating dynamic websites and applications.</p>
-    </section>
-    <section id="experience">
-        <h2>Experience</h2>
+        <p> With 8+ years of teaching experience and a passion for integrating modern AI technologies into education,
+            I’ve helped students and educators alike grow and succeed. My expertise spans Islamic studies, science,
+            languages, and technology, focusing on both classroom and digital environments. </p>
+    </section> <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <h3>Professional Experience</h3>
         <ul>
-            <li>
-                <h3>Company Name</h3>
-                <p>Job Title</p>
-                <p>Duration</p>
-                <p>Job Description</p>
-            </li>
-            <!-- Add more experiences as needed -->
+            <li><strong>Educator (8 Years):</strong> Taught a wide range of subjects and mentored students.</li>
+            <li><strong>Prompt Engineer (1 Year):</strong> Designed and optimized AI-generated text prompts.</li>
+            <li><strong>Instructional Coach & Mentor (2 Years):</strong> Guided educators and mentored students.</li>
+            <li><strong>Academic Coordinator, Exam Controller, Web Portal Admin:</strong> Successfully managed various
+                academic operations.</li>
         </ul>
-    </section>
-    <section id="education">
-        <h2>Education</h2>
+        <h3>Education</h3>
         <ul>
-            <li>
-                <h3>Institution Name</h3>
-                <p>Degree</p>
-                <p>Year</p>
-            </li>
-            <!-- Add more education details as needed -->
+            <li><strong>MA in Islamic and Human Sciences:</strong> Darul Huda Islamic University, Kerala.</li>
+            <li><strong>MA in English Language and Literature:</strong> University of Calicut, Kerala.</li>
         </ul>
-    </section>
+    </section> <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
+        <p> Python, MongoDB, Web Design, AI Tools Integration, MS Office, English, Arabic, Urdu, Malayalam, Curriculum
+            Development, Classroom Management, Educational Technology Integration. </p>
+    </section> <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <!-- Add more skills as needed -->
+            <li><strong>Islamic Shafee Jurisprudential Concepts Book:</strong> Unpublished book in Arabic on Islamic
+                Jurisprudence.</li>
+            <li><strong>AI Tools and Parenting Book:</strong> Authored a guidebook combining AI tools and parenting
+                strategies.</li>
+            <li><strong>AI Integration in Education:</strong> Developed AI-based solutions to enhance learning outcomes.
+            </li>
         </ul>
-    </section>
+    </section> <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>Phone: +1234567890</p>
-    </section>
+        <form action="#" method="post"> <input type="text" name="name" placeholder="Your Name" required> <input
+                type="email" name="email" placeholder="Your Email" required> <textarea name="message"
+                placeholder="Your Message" rows="5" required></textarea> <button type="submit">Submit</button> </form>
+    </section> <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Muhammed Afsal. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
