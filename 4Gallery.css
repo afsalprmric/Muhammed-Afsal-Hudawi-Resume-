@@ -1,0 +1,36 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+#gallery {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px ;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
