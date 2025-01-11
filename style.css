@@ -1,97 +1,123 @@
-/* General Styles */
+/* General Reset */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Header Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header and Navigation Bar */
 header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 2rem;
+  background: #0077b6;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-header p {
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
+.nav-links li {
+  margin: 0 15px;
 }
 
-header .cta-btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
-    background-color: white;
-    color: #4CAF50;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+.nav-links a {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
-/* Section Styles */
-section {
-    padding: 2rem;
-    margin: 1rem auto;
-    background-color: white;
-    border-radius: 10px;
-    max-width: 900px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.nav-links a:hover {
+  background: #023e8a;
 }
 
-section h2 {
-    margin-top: 0;
-    color: #4CAF50;
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #0077b6, #00b4d8);
+  color: white;
 }
 
-ul {
-    padding-left: 20px;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-ul li {
-    margin-bottom: 0.5rem;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
-/* Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
+/* Quick Links Section */
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
 }
 
-form input,
-form textarea,
-form button {
-    margin-bottom: 1rem;
-    padding: 0.8rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-form button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+.card h2 {
+  font-size: 1.5rem;
+  color: #0077b6;
+  margin-bottom: 10px;
 }
 
-form button:hover {
-    background-color: #45a049;
+.card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
 }
 
-/* Footer Styles */
+.card .btn {
+  display: inline-block;
+  background: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.card .btn:hover {
+  background: #023e8a;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    margin-top: 1rem;
+  text-align: center;
+  padding: 20px;
+  background: #023e8a;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 40px;
 }
-
