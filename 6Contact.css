@@ -34,36 +34,65 @@ footer {
     font-size: 0.9rem;
     margin-top: 40px;
   }
-  nav {
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .nav-links li {
-    display: inline;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: color 0.3s, background-color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: white;
-    background-color: #007BFF;
-    border-radius: 5px;
-  }
-  
+  /* Navigation Styles */
+nav {
+  margin-top: 10px;
+}
+
+.nav-links {
+  list-style: none; /* This hides the bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  position: relative; /* Position relative for dropdown positioning */
+}
+nav ul {
+  list-style: none; /* Hide bullets for all unordered lists in nav */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+.nav-links li {
+  position: relative; /* Position relative for dropdown */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px; /* Add padding for better click area */
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position dropdown absolutely */
+  background-color: #0077b6; /* Match the header background */
+  min-width: 160px; /* Set a minimum width */
+  z-index: 1; /* Ensure it appears above other content */
+}
+
+.nav-links li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+  padding: 10px 15px; /* Padding for dropdown items */
+}
+
+.dropdown li a {
+  color: white; /* Text color for dropdown links */
+}
+
+.dropdown li a:hover {
+  background-color: #023e8a; /* Background color on hover */
+}
+
   header .profile-photo {
     width: 120px;
     height: 120px;
