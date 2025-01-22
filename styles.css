@@ -58,10 +58,6 @@ header {
   gap: 20px; /* Space between button and title */
 }
 
-.menu-button {
-  position: relative; /* Ensure the button is positioned relative for absolute positioning of label */
-}
-
 .button-label {
   visibility: hidden; /* Hide the label by default */
   position: absolute; /* Position the label absolutely */
