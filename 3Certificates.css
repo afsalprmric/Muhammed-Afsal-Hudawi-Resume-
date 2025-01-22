@@ -35,13 +35,33 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-footer {
+  footer {
     text-align: center;
     padding: 20px;
     background: #023e8a;
     color: white;
     font-size: 0.9rem;
     margin-top: 40px;
+  }
+  .social-icon {
+    font-size: 1.5rem;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    font-size:  1.5rem;
+    color: #f7fafb;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #000000;
+    transform: scale(1.2);
   }
   /* Navigation Styles */
 nav {
