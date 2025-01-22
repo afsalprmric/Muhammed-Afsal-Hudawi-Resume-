@@ -56,12 +56,14 @@ header {
   align-items: center;
   justify-content: center;
   gap: 20px; /* Space between button and title */
+  position: relative; 
 }
+
 
 .button-label {
   visibility: hidden; /* Hide the label by default */
   position: absolute; /* Position the label absolutely */
-  left: 50%; /* Center the label horizontally */
+  left: 0%; /* Center the label horizontally */
   transform: translateX(-50%); /* Adjust for centering */
   bottom: -50%; /* Position it above the button */
   background-color: #0077b6; /* Background color for the label */

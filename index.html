@@ -19,22 +19,22 @@
         </button>
         <nav class="dropdown-menu" id="dropdownMenu">
           <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="1about.html">About</a></li>
-              <li><a href="2portfolio.html">Portfolio</a></li>
-              <li><a href="3Certificates.html">Certificates</a></li>
-              <li><a href="4Gallery.html">Gallery</a></li>
-              <li><a href="5Services.html">Services</a></li>
-              <li><a href="6Contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="1about.html">About</a></li>
+            <li><a href="2portfolio.html">Portfolio</a></li>
+            <li><a href="3Certificates.html">Certificates</a></li>
+            <li><a href="4Gallery.html">Gallery</a></li>
+            <li><a href="5Services.html">Services</a></li>
+            <li><a href="6Contact.html">Contact</a></li>
           </ul>
-      </nav>
+        </nav>
         <img
-            src="https://media.licdn.com/dms/image/v2/D5603AQFysai9kNbjyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1667623882362?e=1742428800&v=beta&t=WQPL2ngz86oWt4KMHNMWtWFumrWgwMo8K7BMp4T-3xU"
-            alt="Muhammed Afsal Hudawi" class="profile-photo">
-            <h1 class="site-title">Muhammed Afsal Hudawi</h1>
-          </div>
+          src="https://media.licdn.com/dms/image/v2/D5603AQFysai9kNbjyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1667623882362?e=1742428800&v=beta&t=WQPL2ngz86oWt4KMHNMWtWFumrWgwMo8K7BMp4T-3xU"
+          alt="Muhammed Afsal Hudawi" class="profile-photo">
+        <h1 class="site-title">Muhammed Afsal Hudawi</h1>
+      </div>
     </div>
-</header>
+  </header>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -108,22 +108,22 @@
   <script>
     // Function to toggle the dropdown menu
     function toggleDropdown() {
-        const dropdownMenu = document.getElementById('dropdownMenu');
-        dropdownMenu.classList.toggle('active');
+      const dropdownMenu = document.getElementById('dropdownMenu');
+      dropdownMenu.classList.toggle('active');
     }
 
     // Function to close the dropdown if clicked outside
     window.onclick = function (event) {
-        const dropdownMenu = document.getElementById('dropdownMenu');
-        const menuButton = document.querySelector('.menu-button');
+      const dropdownMenu = document.getElementById('dropdownMenu');
+      const menuButton = document.querySelector('.menu-button');
 
-        // Check if the click was outside the dropdown and the button
-        if (!event.target.matches('.menu-button') && !dropdownMenu.contains(event.target)) {
-            // Close the dropdown
-            dropdownMenu.classList.remove('active');
-        }
+      // Check if the click was outside the dropdown and the button
+      if (!event.target.matches('.menu-button') && !dropdownMenu.contains(event.target)) {
+        // Close the dropdown
+        dropdownMenu.classList.remove('active');
+      }
     }
-</script>
+  </script>
 </body>
 
 </html>
